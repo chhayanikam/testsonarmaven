@@ -11,7 +11,7 @@ addons:
       secure: "ca192a970691a554e0e614cede7f0c79c7538643"
 
 script:
-  - ./mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 
 cache:
   directories:
